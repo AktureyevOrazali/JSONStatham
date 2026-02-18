@@ -4,8 +4,8 @@ from aiogram import Router, F
 from aiogram.filters import CommandStart
 from aiogram.types import Message, CallbackQuery
 
-from bot.app.keyboards.main_menu import get_main_menu
-from bot.app.services.api_client import api_client
+from app.keyboards.main_menu import get_main_menu
+from app.services.api_client import api_client
 
 router = Router()
 
@@ -77,17 +77,18 @@ async def callback_profile(callback: CallbackQuery):
 📋 <b>Подписка:</b>
 {sub_text}
 """
-        from bot.app.keyboards.main_menu import get_back_to_menu
+        from app.keyboards.main_menu import get_back_to_menu
         await callback.message.edit_text(
             profile_text,
             parse_mode="HTML",
             reply_markup=get_back_to_menu(),
         )
     except Exception as e:
-        from bot.app.keyboards.main_menu import get_back_to_menu
+        from app.keyboards.main_menu import get_back_to_menu
         await callback.message.edit_text(
             f"❌ Ошибка при получении профиля:\n<code>{e}</code>",
             parse_mode="HTML",
             reply_markup=get_back_to_menu(),
         )
     await callback.answer()
+

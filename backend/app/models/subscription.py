@@ -6,7 +6,7 @@ from datetime import datetime
 from sqlalchemy import Boolean, DateTime, Enum, ForeignKey, String, func
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
-from backend.app.database import Base
+from app.database import Base
 
 
 class SubscriptionPlan(str, enum.Enum):
@@ -50,3 +50,4 @@ class Subscription(Base):
 
     def __repr__(self) -> str:
         return f"<Subscription id={self.id} plan={self.plan} status={self.status}>"
+

@@ -30,3 +30,7 @@ alembic/versions/*.pyc
 # OS
 .DS_Store
 Thumbs.db
+
+# Agent rules
+AGENTS.md
+

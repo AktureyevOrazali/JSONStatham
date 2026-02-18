@@ -9,9 +9,9 @@ from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
 from aiogram.fsm.storage.memory import MemoryStorage
 
-from bot.app.config import bot_settings
-from bot.app.handlers import start, subscription, server, support
-from bot.app.middlewares.auth import AuthMiddleware
+from app.config import bot_settings
+from app.handlers import start, subscription, server, support
+from app.middlewares.auth import AuthMiddleware
 
 
 async def main():
@@ -56,3 +56,4 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+

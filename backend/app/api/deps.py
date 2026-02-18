@@ -5,9 +5,9 @@ from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from backend.app.database import get_db
-from backend.app.models.user import User
-from backend.app.services.auth_service import decode_token
+from app.database import get_db
+from app.models.user import User
+from app.services.auth_service import decode_token
 
 security = HTTPBearer()
 
@@ -47,3 +47,4 @@ async def get_admin_user(
             detail="Только для администраторов",
         )
     return current_user
+

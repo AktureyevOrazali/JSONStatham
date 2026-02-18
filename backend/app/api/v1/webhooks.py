@@ -4,10 +4,10 @@ from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from backend.app.database import get_db
-from backend.app.models.payment import Payment, PaymentStatus
-from backend.app.schemas.payment import PaymentWebhook
-from backend.app.services.subscription_service import activate_subscription
+from app.database import get_db
+from app.models.payment import Payment, PaymentStatus
+from app.schemas.payment import PaymentWebhook
+from app.services.subscription_service import activate_subscription
 
 router = APIRouter(prefix="/webhooks", tags=["Webhooks"])
 
@@ -44,3 +44,4 @@ async def payment_webhook(
 
     await db.flush()
     return {"status": "ok"}
+

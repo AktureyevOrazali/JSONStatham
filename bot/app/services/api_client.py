@@ -2,7 +2,7 @@
 
 import httpx
 
-from bot.app.config import bot_settings
+from app.config import bot_settings
 
 
 class ApiClient:
@@ -123,3 +123,4 @@ class ApiClient:
 
 # Singleton instance
 api_client = ApiClient()
+

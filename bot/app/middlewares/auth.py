@@ -5,7 +5,7 @@ from typing import Any, Awaitable, Callable, Dict
 from aiogram import BaseMiddleware
 from aiogram.types import Message, CallbackQuery, TelegramObject
 
-from bot.app.services.api_client import api_client
+from app.services.api_client import api_client
 
 
 class AuthMiddleware(BaseMiddleware):
@@ -45,3 +45,4 @@ class AuthMiddleware(BaseMiddleware):
                 )
 
         return await handler(event, data)
+

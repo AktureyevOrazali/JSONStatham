@@ -5,8 +5,8 @@ from aiogram.filters import Command
 from aiogram.fsm.context import FSMContext
 from aiogram.types import Message, CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton
 
-from bot.app.keyboards.main_menu import get_back_to_menu
-from bot.app.states.onboarding import SupportStates
+from app.keyboards.main_menu import get_back_to_menu
+from app.states.onboarding import SupportStates
 
 router = Router()
 
@@ -116,3 +116,4 @@ async def callback_cancel_support(callback: CallbackQuery, state: FSMContext):
         reply_markup=get_back_to_menu(),
     )
     await callback.answer()
+

@@ -4,9 +4,9 @@ from aiogram import Router, F
 from aiogram.filters import Command
 from aiogram.types import Message, CallbackQuery
 
-from bot.app.keyboards.main_menu import get_back_to_menu
-from bot.app.keyboards.subscription import get_plans_keyboard, get_confirm_payment_keyboard
-from bot.app.services.api_client import api_client
+from app.keyboards.main_menu import get_back_to_menu
+from app.keyboards.subscription import get_plans_keyboard, get_confirm_payment_keyboard
+from app.services.api_client import api_client
 
 router = Router()
 
@@ -129,3 +129,4 @@ async def callback_pay(callback: CallbackQuery):
             reply_markup=get_back_to_menu(),
         )
     await callback.answer()
+

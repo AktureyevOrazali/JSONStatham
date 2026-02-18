@@ -7,7 +7,7 @@ from sqlalchemy import DateTime, Enum, ForeignKey, Integer, String, Text, func
 from sqlalchemy.dialects.postgresql import JSON
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
-from backend.app.database import Base
+from app.database import Base
 
 
 class ServerStatus(str, enum.Enum):
@@ -52,3 +52,4 @@ class Server(Base):
 
     def __repr__(self) -> str:
         return f"<Server id={self.id} ip={self.ip_address} status={self.status}>"
+

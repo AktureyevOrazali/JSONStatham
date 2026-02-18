@@ -5,7 +5,7 @@ from datetime import datetime, timedelta, timezone
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from backend.app.models.subscription import Subscription, SubscriptionPlan, SubscriptionStatus
+from app.models.subscription import Subscription, SubscriptionPlan, SubscriptionStatus
 
 
 async def create_subscription(
@@ -82,3 +82,4 @@ async def cancel_subscription(
     await db.flush()
     await db.refresh(subscription)
     return subscription
+

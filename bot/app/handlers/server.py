@@ -4,8 +4,8 @@ from aiogram import Router, F
 from aiogram.filters import Command
 from aiogram.types import Message, CallbackQuery
 
-from bot.app.keyboards.main_menu import get_back_to_menu
-from bot.app.services.api_client import api_client
+from app.keyboards.main_menu import get_back_to_menu
+from app.services.api_client import api_client
 
 router = Router()
 
@@ -186,3 +186,4 @@ async def callback_logs(callback: CallbackQuery):
             reply_markup=get_back_to_menu(),
         )
     await callback.answer()
+

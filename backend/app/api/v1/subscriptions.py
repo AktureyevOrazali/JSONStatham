@@ -3,11 +3,11 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from backend.app.api.deps import get_current_user
-from backend.app.database import get_db
-from backend.app.models.user import User
-from backend.app.schemas.subscription import PLANS, PlanInfo, SubscriptionCreate, SubscriptionResponse
-from backend.app.services.subscription_service import (
+from app.api.deps import get_current_user
+from app.database import get_db
+from app.models.user import User
+from app.schemas.subscription import PLANS, PlanInfo, SubscriptionCreate, SubscriptionResponse
+from app.services.subscription_service import (
     cancel_subscription,
     create_subscription,
     get_active_subscription,
@@ -73,3 +73,4 @@ async def cancel_current_subscription(
         )
     cancelled = await cancel_subscription(db, sub.id)
     return cancelled
+

@@ -7,7 +7,7 @@ from decimal import Decimal
 from sqlalchemy import DateTime, Enum, ForeignKey, Numeric, String, func
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
-from backend.app.database import Base
+from app.database import Base
 
 
 class PaymentStatus(str, enum.Enum):
@@ -44,3 +44,4 @@ class Payment(Base):
 
     def __repr__(self) -> str:
         return f"<Payment id={self.id} amount={self.amount} {self.currency} status={self.status}>"
+

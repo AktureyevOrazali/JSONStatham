@@ -3,9 +3,9 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from backend.app.database import get_db
-from backend.app.schemas.user import TelegramAuthData, TokenResponse
-from backend.app.services.auth_service import (
+from app.database import get_db
+from app.schemas.user import TelegramAuthData, TokenResponse
+from app.services.auth_service import (
     create_access_token,
     create_refresh_token,
     decode_token,
@@ -58,7 +58,7 @@ async def refresh_tokens(
     user_id = int(payload["sub"])
 
     from sqlalchemy import select
-    from backend.app.models.user import User
+    from app.models.user import User
 
     stmt = select(User).where(User.id == user_id)
     result = await db.execute(stmt)
@@ -77,3 +77,4 @@ async def refresh_tokens(
         access_token=new_access,
         refresh_token=new_refresh,
     )
+

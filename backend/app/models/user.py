@@ -6,7 +6,7 @@ from datetime import datetime
 from sqlalchemy import BigInteger, DateTime, Enum, String, func
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
-from backend.app.database import Base
+from app.database import Base
 
 
 class UserRole(str, enum.Enum):
@@ -44,3 +44,4 @@ class User(Base):
 
     def __repr__(self) -> str:
         return f"<User id={self.id} tg={self.telegram_id} role={self.role}>"
+

@@ -9,8 +9,8 @@ from jose import JWTError, jwt
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from backend.app.config import settings
-from backend.app.models.user import User, UserRole
+from app.config import settings
+from app.models.user import User, UserRole
 
 
 def create_access_token(user_id: int, role: str) -> str:
@@ -122,3 +122,4 @@ async def get_or_create_user(
     await db.flush()
     await db.refresh(user)
     return user
+

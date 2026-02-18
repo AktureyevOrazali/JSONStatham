@@ -1,8 +1,8 @@
-from backend.app.models.user import User
-from backend.app.models.subscription import Subscription
-from backend.app.models.server import Server
-from backend.app.models.payment import Payment
-from backend.app.models.ticket import Ticket, ServerLog, ApiKey
+from app.models.user import User
+from app.models.subscription import Subscription
+from app.models.server import Server
+from app.models.payment import Payment
+from app.models.ticket import Ticket, ServerLog, ApiKey
 
 __all__ = [
     "User",
@@ -13,3 +13,4 @@ __all__ = [
     "ServerLog",
     "ApiKey",
 ]
+

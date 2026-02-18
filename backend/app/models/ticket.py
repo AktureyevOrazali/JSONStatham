@@ -6,7 +6,7 @@ from datetime import datetime
 from sqlalchemy import DateTime, Enum, ForeignKey, String, Text, func
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
-from backend.app.database import Base
+from app.database import Base
 
 
 # ── Ticket ──
@@ -90,3 +90,4 @@ class ApiKey(Base):
 
     def __repr__(self) -> str:
         return f"<ApiKey id={self.id} provider={self.provider}>"
+
