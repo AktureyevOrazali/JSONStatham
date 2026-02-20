@@ -1,508 +1,420 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OpenClaw — AI-ассистент за 5 минут | Управляемый хостинг</title>
-  <meta name="description" content="OpenClaw — управляемая платформа для AI-ботов. Персональный сервер, Telegram-управление, поддержка 24/7. Без Docker, без терминала, без навыков." />
+  <title>OpenClaw — AI-ассистент за 5 минут</title>
+  <meta name="description"
+    content="Персональный AI-ассистент на вашем сервере. Управление через Telegram. Без Docker, без терминала." />
   <meta property="og:title" content="OpenClaw — AI-ассистент за 5 минут" />
-  <meta property="og:description" content="Запустите персональный AI-ассистент за 5 минут. Управляйте через Telegram. Мы берём на себя серверы, безопасность и настройку." />
+  <meta property="og:description" content="Запустите AI-ассистент за 5 минут. Управляйте через Telegram." />
   <meta property="og:type" content="website" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦀</text></svg>" />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦀</text></svg>" />
 </head>
+
 <body>
 
-  <!-- ════════════════════════════════════════════════════════
-       HEADER
-       ════════════════════════════════════════════════════════ -->
+  <!-- ═══ HEADER ═══ -->
   <header class="header" id="header">
     <div class="container header-inner">
       <a href="#" class="logo">
         <span class="logo-icon">🦀</span>
         <span class="logo-gradient">OpenClaw</span>
       </a>
-
       <nav class="nav">
         <ul class="nav-links" id="nav-links">
-          <li><a href="#why" class="nav-link">Почему мы</a></li>
-          <li><a href="#how" class="nav-link">Как начать</a></li>
           <li><a href="#features" class="nav-link">Возможности</a></li>
+          <li><a href="#how" class="nav-link">Как начать</a></li>
           <li><a href="#pricing" class="nav-link">Тарифы</a></li>
           <li><a href="#faq" class="nav-link">FAQ</a></li>
         </ul>
-        <a href="https://t.me/OpenClawBot" target="_blank" class="btn btn-primary">
-          <span class="btn-icon">🚀</span>
-          Начать
+        <a href="https://t.me/OpenClawBot" target="_blank" class="btn btn-primary btn-header">
+          Подключить
         </a>
         <button class="mobile-toggle" id="mobile-toggle" aria-label="Меню">
-          <span></span>
-          <span></span>
-          <span></span>
+          <span></span><span></span><span></span>
         </button>
       </nav>
     </div>
   </header>
 
-  <!-- ════════════════════════════════════════════════════════
-       HERO
-       ════════════════════════════════════════════════════════ -->
+  <!-- ═══ HERO ═══ -->
   <section class="hero" id="hero">
     <div class="hero-grid"></div>
-    <div class="container">
+    <div class="hero-glow hero-glow--1"></div>
+    <div class="hero-glow hero-glow--2"></div>
+    <div class="container hero-container">
       <div class="hero-content">
         <div class="hero-badge">
           <span class="pulse-dot"></span>
           Платформа работает 24/7
         </div>
-
         <h1 class="hero-title">
-          Ваш персональный<br />
-          <span class="highlight">AI-ассистент</span><br />
-          за 5 минут
+          AI-ассистент<br /><span class="highlight">за 5 минут</span>
         </h1>
-
         <p class="hero-description">
-          OpenClaw разворачивает для вас персональный сервер с AI-ботом.
-          Мы берём на себя всю техническую часть — вы просто общаетесь через Telegram.
+          Мы разворачиваем персональный сервер с AI-ботом.<br />
+          Вы просто общаетесь через Telegram.
         </p>
-
         <div class="hero-actions">
           <a href="https://t.me/OpenClawBot" target="_blank" class="btn btn-primary btn-lg">
-            <span class="btn-icon">⚡</span>
-            Подключить бесплатно
+            Начать бесплатно
           </a>
-          <a href="#how" class="btn btn-secondary btn-lg">
-            Узнать больше →
+          <a href="#how" class="btn btn-outline btn-lg">
+            Как это работает
           </a>
         </div>
+      </div>
 
-        <div class="hero-stats">
-          <div class="hero-stat">
-            <div class="hero-stat-value">5 мин</div>
-            <div class="hero-stat-label">Время развёртывания</div>
-          </div>
-          <div class="hero-stat">
-            <div class="hero-stat-value">24/7</div>
-            <div class="hero-stat-label">Мониторинг и поддержка</div>
-          </div>
-          <div class="hero-stat">
-            <div class="hero-stat-value">0</div>
-            <div class="hero-stat-label">Технических навыков</div>
-          </div>
+      <div class="hero-metrics">
+        <div class="metric-card">
+          <span class="metric-value">5 мин</span>
+          <span class="metric-label">Развёртывание</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-value">24/7</span>
+          <span class="metric-label">Мониторинг</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-value">0</span>
+          <span class="metric-label">Технических навыков</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ════════════════════════════════════════════════════════
-       WHY OPENCLAW
-       ════════════════════════════════════════════════════════ -->
-  <section class="section why-section" id="why">
-    <div class="container section-center">
-      <span class="section-label reveal">Почему OpenClaw</span>
-      <h2 class="section-title reveal reveal-delay-1">
-        Забудьте о серверах.<br />Сосредоточьтесь на результате.
-      </h2>
-      <p class="section-subtitle reveal reveal-delay-2">
-        Большинство людей бросают настройку AI-ботов из-за технических сложностей.
-        Мы решили эту проблему.
-      </p>
-
-      <div class="why-grid">
-        <div class="why-card reveal reveal-delay-1">
-          <div class="why-icon">🚫</div>
-          <h3 class="why-card-title">Без Docker</h3>
-          <p class="why-card-text">
-            Никаких контейнеров, образов и docker-compose файлов. Мы всё устанавливаем
-            и настраиваем автоматически на вашем выделенном сервере.
-          </p>
+  <!-- ═══ TRUST BAR ═══ -->
+  <section class="trust-bar">
+    <div class="container">
+      <div class="trust-items">
+        <div class="trust-item">
+          <span class="trust-icon">🔒</span>
+          <span>SSL-шифрование</span>
         </div>
-
-        <div class="why-card reveal reveal-delay-2">
-          <div class="why-icon">💻</div>
-          <h3 class="why-card-title">Без терминала</h3>
-          <p class="why-card-text">
-            Забудьте о SSH, командной строке и конфигурационных файлах. Управление
-            происходит через удобный Telegram-бот и личный кабинет.
-          </p>
+        <div class="trust-divider"></div>
+        <div class="trust-item">
+          <span class="trust-icon">🛡️</span>
+          <span>Изолированные серверы</span>
         </div>
-
-        <div class="why-card reveal reveal-delay-3">
-          <div class="why-icon">🎓</div>
-          <h3 class="why-card-title">Без навыков</h3>
-          <p class="why-card-text">
-            Если вы умеете пользоваться Telegram — вы справитесь. Никаких технических
-            знаний не требуется. Мы берём на себя всё.
-          </p>
+        <div class="trust-divider"></div>
+        <div class="trust-item">
+          <span class="trust-icon">💾</span>
+          <span>Ежедневные бэкапы</span>
+        </div>
+        <div class="trust-divider"></div>
+        <div class="trust-item">
+          <span class="trust-icon">⚡</span>
+          <span>Автоперезапуск</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ════════════════════════════════════════════════════════
-       HOW IT WORKS (3 Steps)
-       ════════════════════════════════════════════════════════ -->
-  <section class="section steps-section" id="how">
-    <div class="container section-center">
-      <span class="section-label reveal">Как начать</span>
-      <h2 class="section-title reveal reveal-delay-1">
-        От регистрации до AI-ассистента<br />за 3 простых шага
-      </h2>
-      <p class="section-subtitle reveal reveal-delay-2">
-        Начните использовать OpenClaw прямо сейчас — быстро, просто и без головной боли.
-      </p>
-
-      <div class="steps-grid">
-        <div class="step-card reveal reveal-delay-1">
-          <div class="step-number">1</div>
-          <div class="step-icon">📝</div>
-          <h3 class="step-title">Регистрация</h3>
-          <p class="step-text">
-            Откройте нашего Telegram-бота и нажмите /start.
-            Выберите подходящий тарифный план.
-          </p>
-        </div>
-
-        <div class="step-card reveal reveal-delay-2">
-          <div class="step-number">2</div>
-          <div class="step-icon">💳</div>
-          <h3 class="step-title">Оплата</h3>
-          <p class="step-text">
-            Оплатите подписку через безопасную платёжную систему.
-            Мы развернём ваш сервер автоматически.
-          </p>
-        </div>
-
-        <div class="step-card reveal reveal-delay-3">
-          <div class="step-number">3</div>
-          <div class="step-icon">🤖</div>
-          <h3 class="step-title">Ваш AI готов!</h3>
-          <p class="step-text">
-            Через 5 минут ваш персональный AI-ассистент работает
-            24/7. Управляйте им через Telegram.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ════════════════════════════════════════════════════════
-       FEATURES
-       ════════════════════════════════════════════════════════ -->
+  <!-- ═══ FEATURES ═══ -->
   <section class="section features-section" id="features">
-    <div class="container section-center">
-      <span class="section-label reveal">Возможности</span>
-      <h2 class="section-title reveal reveal-delay-1">
-        Всё что нужно для<br />управления AI-ботом
-      </h2>
-      <p class="section-subtitle reveal reveal-delay-2">
-        Полный контроль через Telegram-бот и личный кабинет —
-        без единой строки кода.
-      </p>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label reveal">Возможности</span>
+        <h2 class="section-title reveal">
+          Всё включено. Управляйте из Telegram.
+        </h2>
+      </div>
 
       <div class="features-grid">
-        <div class="feature-card reveal reveal-delay-1">
-          <span class="feature-icon">📱</span>
-          <h3 class="feature-title">Управление через Telegram</h3>
-          <p class="feature-text">
-            Все основные операции доступны прямо из Telegram: статус, перезапуск, логи,
-            оплата и поддержка — всё в одном боте.
-          </p>
+        <div class="feature-card reveal">
+          <div class="feature-icon-wrap"><span class="feature-icon">📱</span></div>
+          <h3 class="feature-title">Telegram-бот</h3>
+          <p class="feature-text">Статус, перезапуск, логи, оплата — всё в одном боте.</p>
         </div>
-
-        <div class="feature-card reveal reveal-delay-2">
-          <span class="feature-icon">📊</span>
-          <h3 class="feature-title">Мониторинг 24/7</h3>
-          <p class="feature-text">
-            CPU, RAM, uptime — проверяйте состояние вашего сервера в реальном времени.
-            Мы автоматически перезапускаем при сбоях.
-          </p>
+        <div class="feature-card reveal">
+          <div class="feature-icon-wrap"><span class="feature-icon">📊</span></div>
+          <h3 class="feature-title">Мониторинг</h3>
+          <p class="feature-text">CPU, RAM, uptime. Автоперезапуск при сбоях.</p>
         </div>
-
-        <div class="feature-card reveal reveal-delay-3">
-          <span class="feature-icon">🔄</span>
-          <h3 class="feature-title">Перезапуск одной кнопкой</h3>
-          <p class="feature-text">
-            Нажмите кнопку в Telegram или личном кабинете — сервер перезагрузится
-            мгновенно. Никаких SSH-подключений.
-          </p>
+        <div class="feature-card reveal">
+          <div class="feature-icon-wrap"><span class="feature-icon">🔄</span></div>
+          <h3 class="feature-title">Перезапуск</h3>
+          <p class="feature-text">Одна кнопка — сервер перезагрузится мгновенно.</p>
         </div>
-
-        <div class="feature-card reveal reveal-delay-1">
-          <span class="feature-icon">📜</span>
-          <h3 class="feature-title">Просмотр логов</h3>
-          <p class="feature-text">
-            Просматривайте последние логи OpenClaw прямо в Telegram.
-            Фильтрация по уровню: info, warning, error.
-          </p>
+        <div class="feature-card reveal">
+          <div class="feature-icon-wrap"><span class="feature-icon">📜</span></div>
+          <h3 class="feature-title">Логи</h3>
+          <p class="feature-text">Просмотр логов OpenClaw прямо в Telegram.</p>
         </div>
-
-        <div class="feature-card reveal reveal-delay-2">
-          <span class="feature-icon">💬</span>
-          <h3 class="feature-title">Поддержка 24/7</h3>
-          <p class="feature-text">
-            Создавайте тикеты поддержки прямо из бота. Наша команда отвечает
-            в среднем за 30 минут.
-          </p>
+        <div class="feature-card reveal">
+          <div class="feature-icon-wrap"><span class="feature-icon">💬</span></div>
+          <h3 class="feature-title">Поддержка</h3>
+          <p class="feature-text">Тикеты из бота. Ответ в среднем за 30 минут.</p>
         </div>
-
-        <div class="feature-card reveal reveal-delay-3">
-          <span class="feature-icon">🌐</span>
+        <div class="feature-card reveal">
+          <div class="feature-icon-wrap"><span class="feature-icon">🌐</span></div>
           <h3 class="feature-title">Личный кабинет</h3>
-          <p class="feature-text">
-            Расширенное управление через веб-дашборд: настройки OpenClaw,
-            API-ключи, графики и аналитика.
-          </p>
+          <p class="feature-text">Настройки, API-ключи, аналитика через веб-панель.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ════════════════════════════════════════════════════════
-       PRICING
-       ════════════════════════════════════════════════════════ -->
+  <!-- ═══ WHY ═══ -->
+  <section class="section why-section" id="why">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label reveal">Почему OpenClaw</span>
+        <h2 class="section-title reveal">Никаких технических сложностей</h2>
+        <p class="section-subtitle reveal">
+          Мы убрали всё, что мешает вам начать.
+        </p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card reveal">
+          <div class="why-icon">🚫</div>
+          <div class="why-body">
+            <h3 class="why-card-title">Без Docker</h3>
+            <p class="why-card-text">Никаких контейнеров и конфигов. Мы всё устанавливаем автоматически.</p>
+          </div>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-icon">💻</div>
+          <div class="why-body">
+            <h3 class="why-card-title">Без терминала</h3>
+            <p class="why-card-text">Забудьте о SSH и командной строке. Управляйте через бот.</p>
+          </div>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-icon">🎓</div>
+          <div class="why-body">
+            <h3 class="why-card-title">Без навыков</h3>
+            <p class="why-card-text">Умеете пользоваться Telegram? Значит справитесь.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ STEPS ═══ -->
+  <section class="section steps-section" id="how">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label reveal">Как начать</span>
+        <h2 class="section-title reveal">3 шага до вашего AI</h2>
+      </div>
+
+      <div class="steps-wrapper">
+        <div class="steps-line"></div>
+        <div class="steps-grid">
+          <div class="step-card reveal">
+            <div class="step-number">1</div>
+            <h3 class="step-title">Регистрация</h3>
+            <p class="step-text">Откройте бот и выберите тариф. Занимает 30 секунд.</p>
+          </div>
+          <div class="step-card reveal">
+            <div class="step-number">2</div>
+            <h3 class="step-title">Мы разворачиваем</h3>
+            <p class="step-text">Сервер, OpenClaw, SSL — всё автоматически за 5 минут.</p>
+          </div>
+          <div class="step-card reveal">
+            <div class="step-number">3</div>
+            <h3 class="step-title">Готово</h3>
+            <p class="step-text">Откройте Telegram и начните общаться с вашим AI.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="steps-cta reveal">
+        <a href="https://t.me/OpenClawBot" target="_blank" class="btn btn-primary btn-lg">
+          Запустить AI-ассистента
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PRICING ═══ -->
   <section class="section pricing-section" id="pricing">
-    <div class="container section-center">
-      <span class="section-label reveal">Тарифы</span>
-      <h2 class="section-title reveal reveal-delay-1">
-        Простое ценообразование.<br />Всё включено.
-      </h2>
-      <p class="section-subtitle reveal reveal-delay-2">
-        Каждый тариф включает персональный VPS-сервер
-        с полностью настроенным OpenClaw.
-      </p>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label reveal">Тарифы</span>
+        <h2 class="section-title reveal">Всё включено</h2>
+        <p class="section-subtitle reveal">VPS + OpenClaw + поддержка в каждом плане.</p>
+      </div>
 
       <div class="pricing-grid">
         <!-- STARTER -->
-        <div class="pricing-card reveal reveal-delay-1">
-          <div class="pricing-emoji">🟢</div>
-          <h3 class="pricing-name">Starter</h3>
-          <div class="pricing-price">
-            <span class="pricing-amount">990 ₽</span>
-            <span class="pricing-period"> / мес</span>
+        <div class="pricing-card reveal">
+          <div class="pricing-head">
+            <span class="pricing-emoji">🟢</span>
+            <h3 class="pricing-name">Starter</h3>
+            <div class="pricing-price">
+              <span class="pricing-amount">990 ₽</span>
+              <span class="pricing-period">/ мес</span>
+            </div>
           </div>
           <div class="pricing-divider"></div>
           <ul class="pricing-features">
-            <li class="pricing-feature">
-              <span class="check">✓</span> 1 сервер
-            </li>
-            <li class="pricing-feature">
-              <span class="check">✓</span> 1 Telegram-бот
-            </li>
-            <li class="pricing-feature">
-              <span class="check">✓</span> Базовая поддержка
-            </li>
-            <li class="pricing-feature">
-              <span class="check">✓</span> 1 GB RAM VPS
-            </li>
+            <li class="pricing-feature"><span class="check">✓</span>1 сервер</li>
+            <li class="pricing-feature"><span class="check">✓</span>1 Telegram-бот</li>
+            <li class="pricing-feature"><span class="check">✓</span>1 GB RAM</li>
+            <li class="pricing-feature"><span class="check">✓</span>Базовая поддержка</li>
           </ul>
-          <a href="https://t.me/OpenClawBot" target="_blank" class="btn btn-secondary">
-            Выбрать Starter
-          </a>
+          <a href="https://t.me/OpenClawBot" target="_blank" class="btn btn-outline btn-block">Выбрать</a>
         </div>
 
-        <!-- PRO (Featured) -->
-        <div class="pricing-card featured reveal reveal-delay-2">
+        <!-- PRO -->
+        <div class="pricing-card pricing-card--featured reveal">
           <div class="pricing-badge">Популярный</div>
-          <div class="pricing-emoji">🔵</div>
-          <h3 class="pricing-name">Pro</h3>
-          <div class="pricing-price">
-            <span class="pricing-amount">1 990 ₽</span>
-            <span class="pricing-period"> / мес</span>
+          <div class="pricing-head">
+            <span class="pricing-emoji">🔵</span>
+            <h3 class="pricing-name">Pro</h3>
+            <div class="pricing-price">
+              <span class="pricing-amount">1 990 ₽</span>
+              <span class="pricing-period">/ мес</span>
+            </div>
           </div>
           <div class="pricing-divider"></div>
           <ul class="pricing-features">
-            <li class="pricing-feature">
-              <span class="check">✓</span> 1 сервер
-            </li>
-            <li class="pricing-feature">
-              <span class="check">✓</span> До 3 каналов (Telegram, WhatsApp и др.)
-            </li>
-            <li class="pricing-feature">
-              <span class="check">✓</span> Приоритетная поддержка
-            </li>
-            <li class="pricing-feature">
-              <span class="check">✓</span> 2 GB RAM VPS
-            </li>
-            <li class="pricing-feature">
-              <span class="check">✓</span> Расширенная аналитика
-            </li>
+            <li class="pricing-feature"><span class="check">✓</span>1 сервер</li>
+            <li class="pricing-feature"><span class="check">✓</span>До 3 каналов</li>
+            <li class="pricing-feature"><span class="check">✓</span>2 GB RAM</li>
+            <li class="pricing-feature"><span class="check">✓</span>Приоритетная поддержка</li>
+            <li class="pricing-feature"><span class="check">✓</span>Аналитика</li>
           </ul>
-          <a href="https://t.me/OpenClawBot" target="_blank" class="btn btn-primary">
-            Выбрать Pro
-          </a>
+          <a href="https://t.me/OpenClawBot" target="_blank" class="btn btn-primary btn-block">Выбрать</a>
         </div>
 
         <!-- ENTERPRISE -->
-        <div class="pricing-card reveal reveal-delay-3">
-          <div class="pricing-emoji">🟣</div>
-          <h3 class="pricing-name">Enterprise</h3>
-          <div class="pricing-price">
-            <span class="pricing-amount">4 990 ₽</span>
-            <span class="pricing-period"> / мес</span>
+        <div class="pricing-card reveal">
+          <div class="pricing-head">
+            <span class="pricing-emoji">🟣</span>
+            <h3 class="pricing-name">Enterprise</h3>
+            <div class="pricing-price">
+              <span class="pricing-amount">4 990 ₽</span>
+              <span class="pricing-period">/ мес</span>
+            </div>
           </div>
           <div class="pricing-divider"></div>
           <ul class="pricing-features">
-            <li class="pricing-feature">
-              <span class="check">✓</span> До 3 серверов
-            </li>
-            <li class="pricing-feature">
-              <span class="check">✓</span> Неограниченные каналы
-            </li>
-            <li class="pricing-feature">
-              <span class="check">✓</span> Выделенная поддержка 24/7
-            </li>
-            <li class="pricing-feature">
-              <span class="check">✓</span> 4 GB RAM VPS
-            </li>
-            <li class="pricing-feature">
-              <span class="check">✓</span> Custom домен
-            </li>
-            <li class="pricing-feature">
-              <span class="check">✓</span> SLA 99.9%
-            </li>
+            <li class="pricing-feature"><span class="check">✓</span>До 3 серверов</li>
+            <li class="pricing-feature"><span class="check">✓</span>Все каналы</li>
+            <li class="pricing-feature"><span class="check">✓</span>4 GB RAM</li>
+            <li class="pricing-feature"><span class="check">✓</span>Поддержка 24/7</li>
+            <li class="pricing-feature"><span class="check">✓</span>Custom домен</li>
+            <li class="pricing-feature"><span class="check">✓</span>SLA 99.9%</li>
           </ul>
-          <a href="https://t.me/OpenClawBot" target="_blank" class="btn btn-secondary">
-            Выбрать Enterprise
-          </a>
+          <a href="https://t.me/OpenClawBot" target="_blank" class="btn btn-outline btn-block">Выбрать</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ════════════════════════════════════════════════════════
-       FAQ
-       ════════════════════════════════════════════════════════ -->
+  <!-- ═══ FAQ ═══ -->
   <section class="section faq-section" id="faq">
-    <div class="container section-center">
-      <span class="section-label reveal">FAQ</span>
-      <h2 class="section-title reveal reveal-delay-1">
-        Часто задаваемые вопросы
-      </h2>
-      <p class="section-subtitle reveal reveal-delay-2">
-        Не нашли ответ? Напишите в нашу поддержку через Telegram-бот.
-      </p>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label reveal">FAQ</span>
+        <h2 class="section-title reveal">Частые вопросы</h2>
+      </div>
 
       <div class="faq-list">
-        <!-- FAQ 1 -->
         <div class="faq-item reveal">
           <button class="faq-question">
-            Что такое OpenClaw?
+            <span>Что такое OpenClaw?</span>
             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M6 9l6 6 6-6" />
             </svg>
           </button>
           <div class="faq-answer">
             <div class="faq-answer-inner">
-              OpenClaw — это open-source AI-ассистент, который работает 24/7 на вашем
-              персональном сервере. В отличие от ChatGPT, который живёт в браузере,
-              OpenClaw подключается к Telegram, WhatsApp и другим платформам для
+              Open-source AI-ассистент, который работает 24/7 на вашем сервере. Подключается к Telegram и WhatsApp для
               автоматизации задач.
             </div>
           </div>
         </div>
 
-        <!-- FAQ 2 -->
-        <div class="faq-item reveal reveal-delay-1">
-          <button class="faq-question">
-            Нужны ли технические навыки?
-            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M6 9l6 6 6-6" />
-            </svg>
-          </button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              Нет! Мы полностью управляем инфраструктурой — Docker, SSH, обновления
-              и безопасность. Если вы умеете пользоваться Telegram, вы справитесь
-              с OpenClaw.
-            </div>
-          </div>
-        </div>
-
-        <!-- FAQ 3 -->
-        <div class="faq-item reveal reveal-delay-2">
-          <button class="faq-question">
-            Сколько времени занимает настройка?
-            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M6 9l6 6 6-6" />
-            </svg>
-          </button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              Ваш AI-ассистент будет готов примерно через 5 минут после оплаты.
-              Мы автоматически создаём сервер, устанавливаем OpenClaw,
-              настраиваем SSL и конфигурацию.
-            </div>
-          </div>
-        </div>
-
-        <!-- FAQ 4 -->
-        <div class="faq-item reveal reveal-delay-3">
-          <button class="faq-question">
-            Чем это отличается от ChatGPT?
-            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M6 9l6 6 6-6" />
-            </svg>
-          </button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              ChatGPT — это чат-бот в браузере, он отвечает на вопросы, но не
-              выполняет действия. OpenClaw — это AI-агент, который работает 24/7
-              на вашем сервере, подключается к Telegram/WhatsApp, выполняет задачи
-              и автоматизирует рабочие процессы. ChatGPT — консультант. OpenClaw —
-              персональный ассистент.
-            </div>
-          </div>
-        </div>
-
-        <!-- FAQ 5 -->
-        <div class="faq-item reveal reveal-delay-4">
-          <button class="faq-question">
-            Мои данные в безопасности?
-            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M6 9l6 6 6-6" />
-            </svg>
-          </button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              Да. Ваш экземпляр OpenClaw работает на выделенном, изолированном
-              сервере. Мы используем шифрование enterprise-уровня, автоматические
-              SSL-сертификаты и ежедневные бэкапы. Ваши данные остаются вашими.
-            </div>
-          </div>
-        </div>
-
-        <!-- FAQ 6 -->
-        <div class="faq-item reveal reveal-delay-5">
-          <button class="faq-question">
-            Можно отменить подписку?
-            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M6 9l6 6 6-6" />
-            </svg>
-          </button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              Да, в любое время. Нет никаких договоров или обязательств. Отмените
-              подписку из Telegram-бота или личного кабинета. Возврат средств
-              при отмене в течение 7 дней.
-            </div>
-          </div>
-        </div>
-
-        <!-- FAQ 7 -->
         <div class="faq-item reveal">
           <button class="faq-question">
-            Какие AI-провайдеры поддерживаются?
+            <span>Нужны ли технические навыки?</span>
             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M6 9l6 6 6-6" />
             </svg>
           </button>
           <div class="faq-answer">
             <div class="faq-answer-inner">
-              OpenClaw поддерживает все основные провайдеры: OpenAI (GPT-4),
-              Anthropic (Claude), Google (Gemini), OpenRouter и другие.
-              Вы подключаете свой API-ключ через бот или личный кабинет.
+              Нет. Мы берём на себя Docker, SSH, обновления и безопасность. Если умеете пользоваться Telegram —
+              справитесь.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            <span>Сколько времени занимает настройка?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Около 5 минут. Сервер, OpenClaw, SSL — всё создаётся автоматически после оплаты.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            <span>Чем отличается от ChatGPT?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              ChatGPT — чат в браузере. OpenClaw — AI-агент на вашем сервере: работает 24/7, подключён к Telegram,
+              выполняет задачи автономно.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            <span>Данные в безопасности?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Да. Выделенный изолированный сервер, шифрование, SSL, ежедневные бэкапы. Ваши данные — только ваши.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            <span>Можно отменить подписку?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Да, в любое время из бота или кабинета. Возврат средств при отмене в течение 7 дней.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            <span>Какие AI-провайдеры поддерживаются?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              OpenAI, Anthropic, Google Gemini, OpenRouter и другие. Подключаете свой API-ключ через бот.
             </div>
           </div>
         </div>
@@ -510,28 +422,20 @@
     </div>
   </section>
 
-  <!-- ════════════════════════════════════════════════════════
-       CTA (Final)
-       ════════════════════════════════════════════════════════ -->
+  <!-- ═══ CTA ═══ -->
   <section class="section cta-section">
     <div class="container">
       <div class="cta-inner reveal">
-        <h2 class="cta-title">Готовы запустить своего<br />AI-ассистента?</h2>
-        <p class="cta-text">
-          Подключитесь через Telegram-бот и получите персональный сервер
-          с OpenClaw за 5 минут. Без технических навыков.
-        </p>
+        <h2 class="cta-title">Готовы запустить AI?</h2>
+        <p class="cta-text">Персональный сервер с OpenClaw за 5 минут.</p>
         <a href="https://t.me/OpenClawBot" target="_blank" class="btn btn-primary btn-lg">
-          <span class="btn-icon">🦀</span>
           Начать сейчас
         </a>
       </div>
     </div>
   </section>
 
-  <!-- ════════════════════════════════════════════════════════
-       FOOTER
-       ════════════════════════════════════════════════════════ -->
+  <!-- ═══ FOOTER ═══ -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
@@ -540,23 +444,17 @@
             <span class="logo-icon">🦀</span>
             <span class="logo-gradient">OpenClaw</span>
           </a>
-          <p class="footer-brand-text">
-            Управляемая платформа для AI-ботов. Персональный сервер,
-            Telegram-управление, поддержка 24/7.
-          </p>
+          <p class="footer-brand-text">AI-ассистент на вашем сервере.<br />Управление через Telegram.</p>
         </div>
-
         <div class="footer-col">
           <h4 class="footer-heading">Навигация</h4>
           <ul class="footer-links">
-            <li><a href="#why" class="footer-link">Почему мы</a></li>
-            <li><a href="#how" class="footer-link">Как начать</a></li>
             <li><a href="#features" class="footer-link">Возможности</a></li>
+            <li><a href="#how" class="footer-link">Как начать</a></li>
             <li><a href="#pricing" class="footer-link">Тарифы</a></li>
             <li><a href="#faq" class="footer-link">FAQ</a></li>
           </ul>
         </div>
-
         <div class="footer-col">
           <h4 class="footer-heading">Контакты</h4>
           <ul class="footer-links">
@@ -565,14 +463,14 @@
           </ul>
         </div>
       </div>
-
       <div class="footer-bottom">
-        <span>© 2026 OpenClaw. Все права защищены.</span>
-        <span>Сделано с 🦀 в Казахстане</span>
+        <span>© 2026 OpenClaw</span>
+        <span>Сделано с 🦀</span>
       </div>
     </div>
   </footer>
 
   <script src="script.js"></script>
 </body>
+
 </html>
